@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Floating Chatbot</title>
+  <meta charset="UTF-8" />
+  <title>Floating Copilot Chat</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
     #chatToggle {
       position: fixed;
       bottom: 20px;
@@ -33,15 +40,13 @@
     iframe {
       width: 100%;
       height: 100%;
-      border-radius: 12px;
       border: none;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-
   <button id="chatToggle">💬 Chat with us</button>
-
   <div id="chatContainer">
     <iframe src="https://copilotstudio.microsoft.com/environments/Default-8fa69c26-409d-43e5-973c-17a8be1a7f35/bots/crf44_sdTestTl/webchat?__version__=2"></iframe>
   </div>
@@ -60,7 +65,5 @@
       }
     });
   </script>
-
 </body>
 </html>
-
